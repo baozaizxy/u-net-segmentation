@@ -1,2 +1,3 @@
 *.sh filter=lfs diff=lfs merge=lfs -text
 data/annotations.json filter=lfs diff=lfs merge=lfs -text
+seaturtleid2022/turtles-data/data/annotations.json filter=lfs diff=lfs merge=lfs -text
