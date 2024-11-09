@@ -1,0 +1,2 @@
+*.sh filter=lfs diff=lfs merge=lfs -text
+data/annotations.json filter=lfs diff=lfs merge=lfs -text
