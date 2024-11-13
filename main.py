@@ -18,7 +18,7 @@ def main(config):
         os.makedirs(config.result_path)
 
     augmentation_prob = random.random() * 0.7
-    epoch = 10
+    epoch = 50
     decay_ratio = random.random() * 0.8
     decay_epoch = int(epoch * decay_ratio)
 
