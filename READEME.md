@@ -34,7 +34,8 @@ Run main.py
 
 ## Result
 
-![](best_result.png)
-![](worst_result.png)
+![](best_prediction.png)
+
+![](worst_prediction.png)
 
 [test] JS_flipper: 0.4264, JS_carapace: 0.5263, JS_head: 0.4041, JS: 0.4523
