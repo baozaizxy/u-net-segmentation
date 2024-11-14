@@ -17,14 +17,11 @@ def main(config):
     if not os.path.exists(config.result_path):
         os.makedirs(config.result_path)
 
-    augmentation_prob = random.random() * 0.7
     epoch = 50
     decay_ratio = random.random() * 0.8
     decay_epoch = int(epoch * decay_ratio)
 
-    config.augmentation_prob = augmentation_prob
     config.num_epochs = epoch
-    # config.lr = lr
     config.num_epochs_decay = decay_epoch
 
     train_loader = get_loader(image_path=config.train_path,
@@ -76,7 +73,7 @@ if __name__ == '__main__':
     parser.add_argument('--val_step', type=int, default=2)
 
     # misc
-    parser.add_argument('--mode', type=str, default='train')
+    parser.add_argument('--mode', type=str, default='test')
     parser.add_argument('--model_type', type=str, default='U_Net')
     parser.add_argument('--model_path', type=str, default='./models')
     parser.add_argument('--train_path', type=str, default='./dataset/train/')
